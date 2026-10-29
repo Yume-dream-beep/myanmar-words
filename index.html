@@ -60,7 +60,7 @@ button{font-size:15px;padding:10px 16px;border:0;border-radius:10px;background:v
 <div class="ex my" id="ex"></div>
 <p class="hint">色のついたブロックや構成要素をタップすると詳しい説明が出ます。</p>
 <div id="out"></div>
-<p class="warn">辞書データ: Wiktionary(kaikki.org / wiktextract 経由、CC BY-SA・GFDL)。意味は英語のまま表示される語があります。日本語の意味は一部の語のみ。発音記号(IPA)の音節ごとの表示は規則による目安で、(?) は未対応の組み合わせです。</p>
+<p class="warn">辞書データ: Wiktionary(kaikki.org / wiktextract 経由、CC BY-SA・GFDL)。意味は英語のまま表示される語があります。日本語の意味は一部の語のみ。発音記号(IPA)の音節ごとの表示は規則による目安で、(?) は未対応の組み合わせです。<br>このページでは、閲覧数をCookieなしで集計しています(GoatCounter)。</p>
 </main>
 <div id="bd"></div>
 <div id="sh"><div class="ss" id="s1"></div><div class="tt my" id="s2"></div><div class="pp ipa" id="s3"></div><div class="bb" id="s4"></div><button id="x">閉じる</button></div>
@@ -194,5 +194,6 @@ $('q').addEventListener('keydown',e=>{if(e.key==='Enter'){hide();run()}});
 EX.forEach(w=>{const b=document.createElement('button');b.textContent=w;b.onclick=()=>{$('q').value=w;hide();run()};$('ex').appendChild(b)});
 $('q').value=EX[0];run();
 </script>
+<script data-goatcounter="https://dream.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
